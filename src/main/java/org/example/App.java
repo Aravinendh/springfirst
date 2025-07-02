@@ -12,9 +12,10 @@ public class App
     public static void main( String[] args ) {
         ApplicationContext context = new ClassPathXmlApplicationContext("resources.xml");
         Student s = (Student) context.getBean("st");
-        s.internship();
-        context.getBean("st");
-        context.getBean("hello");
-        System.out.println("Hello World!");
+        s.internshipProgram();
+        Marks m = (Marks) context.getBean("ma");
+        m.studentmarks();
+        Details d = (Details) context.getBean("de");
+        d.student_details();
     }
 }

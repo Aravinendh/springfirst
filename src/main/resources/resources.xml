@@ -6,4 +6,8 @@
     </bean>
     <bean class="org.example.SpringBoot" />
     <bean id="hello" class="org.example.SpringBoot"/>
+    <bean id="ma" class="org.example.Marks">
+    </bean>
+    <bean id="de" class="org.example.Details">
+    </bean>
 </beans>
